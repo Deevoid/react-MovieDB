@@ -13,7 +13,6 @@ function App() {
         <Switch>
           <Route path="/" exact component={Homepage} />
           <Route path="/:id" exact component={SingleMovie} />
-          {/* <Route path="*" component={NotFound} /> */}
         </Switch>
         <Footer />
       </Router>
