@@ -14,7 +14,6 @@ export default function Singlemovie() {
         `https://api.themoviedb.org/3/movie/${movieId}?api_key=${process.env.REACT_APP_API}&language=en-US`
       )
       .then((res) => {
-        console.log(res.data);
         setSingleMovie(res.data);
       });
   }, [movieId]);
